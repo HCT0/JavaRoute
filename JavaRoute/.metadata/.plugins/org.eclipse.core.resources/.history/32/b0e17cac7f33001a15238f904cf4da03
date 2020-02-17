@@ -1,0 +1,7 @@
+package NumberAndString;
+
+public class NumberToString {
+	public static void main(String[] args) {
+	 int i = 100l
+	}
+}

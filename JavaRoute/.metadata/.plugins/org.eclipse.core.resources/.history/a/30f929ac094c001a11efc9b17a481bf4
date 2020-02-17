@@ -1,0 +1,15 @@
+package SetFramework;
+import java.util.*;
+import LOL.*;
+
+public class LinkedList {
+	public static void main(String[] args) {
+		LinkedList ll = new LinkedList();//
+		  ll.addLast(new Hero("hero1"));
+	        ll.addLast(new Hero("hero2"));
+	        ll.addLast(new Hero("hero3"));
+		
+		
+	}
+	
+}

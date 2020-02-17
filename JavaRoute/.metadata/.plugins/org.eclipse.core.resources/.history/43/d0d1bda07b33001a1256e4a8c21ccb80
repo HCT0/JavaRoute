@@ -1,0 +1,11 @@
+package NumberAndString;
+
+public class Unboxing {
+	public static void main(String[] args) {
+		int i =100;
+		Integer it1 = new Integer(i);
+		Integer it2 = i;//自动装箱
+		
+		int i2 = it1;//自动拆箱
+	}
+}

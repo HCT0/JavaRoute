@@ -1,0 +1,76 @@
+package Jdbc;
+import java.util.*;
+import LOL.Hero;
+import java.sql.*;
+public class HeroDao implements DAO {
+
+	//在构造函数进行驱动器的加载
+	public HeroDao() {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+	
+	//进行连接
+	public Connection getConnection() throws SQLException {
+		return  DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8","root", "root");
+        
+	}
+	
+	
+	@Override
+	public void add(Hero hero) {
+		String sql = "insert into hero values(null,?,?,?)";
+        try (Connection c = getConnection(); PreparedStatement ps = c.prepareStatement(sql);) {
+  
+            ps.setString(1, hero.name);
+            ps.setFloat(2, hero.hp);
+            ps.setInt(3, hero.damage);
+  
+            ps.execute();
+  
+            ResultSet rs = ps.getGeneratedKeys();
+            if (rs.next()) {
+                int id = rs.getInt(1);
+                hero.id = id;
+            }
+        } catch (SQLException e) {
+  
+            e.printStackTrace();
+        }
+		
+	}
+
+	@Override
+	public void update(Hero hero) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Hero get(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public java.util.List<Hero> List() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public java.util.List<Hero> list(int start, int count) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+		
+}

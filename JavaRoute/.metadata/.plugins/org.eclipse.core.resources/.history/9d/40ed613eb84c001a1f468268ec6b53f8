@@ -1,0 +1,17 @@
+package GenericParadigm;
+import java.util.*;
+import LOL.*;
+public class SuperGeneric {
+	public static void main(String[] args) {
+		ArrayList<? super Hero > objects = new ArrayList();
+		objects.add(new Hero("gailun"));
+		
+		
+		
+		
+		ArrayList<Object > object1 = (ArrayList<Object>) objects;
+		
+		
+		
+	}
+}

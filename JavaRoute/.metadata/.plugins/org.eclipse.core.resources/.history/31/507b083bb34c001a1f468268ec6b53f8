@@ -1,0 +1,6 @@
+package GenericParadigm;
+
+public class NodeGenericChange<T> {
+	public Nodegenericchange<T> leftNode;
+	
+}

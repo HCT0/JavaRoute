@@ -1,0 +1,13 @@
+package GenericParadigm;
+
+public class NodeGenericChange<T> {
+	public NodeGenericChange<T> leftNode;
+	public NodeGenericChange<T> rightNode;
+	public T Value;
+	public static void main(String[] args) {
+		int Random []  = new int[]{1,2,3,4,5,6,7,8,9,10};
+		NodeGenericChange<Integer> roots = new NodeGenericChange<Integer>();
+		for(int i=0 ;i<Random.length();i++)
+	}
+	
+}

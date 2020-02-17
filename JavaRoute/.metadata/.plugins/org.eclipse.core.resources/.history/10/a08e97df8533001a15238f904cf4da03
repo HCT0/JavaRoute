@@ -1,0 +1,9 @@
+package NumberAndString;
+
+public class FormatPrint {
+	public static void main(String[] args) {
+		int a = 100;
+		int b = 10l
+		System.out.printf(%d,%d,%d,1,2,3);
+	}
+}

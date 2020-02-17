@@ -1,0 +1,8 @@
+package Thread;
+
+public class Atomic {
+	public static void main(String[] args) {
+		AtomicInteger ai = new AtomicInteger();
+		
+	}
+}

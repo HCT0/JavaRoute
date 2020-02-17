@@ -1,0 +1,7 @@
+package NumberAndString;
+
+public class FormatPrint {
+	public static void main(String[] args) {
+	
+	}
+}

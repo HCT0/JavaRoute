@@ -1,0 +1,28 @@
+package Thread;
+
+import java.util.concurrent.atomic.AtomicInteger;
+
+public class AtomicTest {
+	public static void main(String[] args) {
+		private static int value =0;
+		AtomicInteger ai = new AtomicInteger();
+		int  number = 10000;
+		Thread ts1[] =  new Thread[number];
+		
+		 for (int i = 0; i < number; i++) {
+			 Thread t =new Thread(){
+				 public void run(){
+					 value++;
+	              	}
+	          	};
+	          t.start();
+	          ts1[i] = t;
+		 }
+	
+	
+	
+	
+	
+	
+	}
+}

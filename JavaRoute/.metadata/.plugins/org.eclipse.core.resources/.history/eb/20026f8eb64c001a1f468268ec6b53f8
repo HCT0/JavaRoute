@@ -1,0 +1,5 @@
+package GenericParadigm;
+import LOL.*;
+public class extendsGeneric {
+
+}

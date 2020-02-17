@@ -1,0 +1,9 @@
+package NumberAndString;
+
+public class Unboxing {
+	public static void main(String[] args) {
+		int i =100;
+		Integer it1 = new Integr(i);
+		Integer it2 = i;
+	}
+}

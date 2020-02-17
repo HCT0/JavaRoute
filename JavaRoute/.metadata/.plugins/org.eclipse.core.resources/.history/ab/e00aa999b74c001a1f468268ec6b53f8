@@ -1,0 +1,5 @@
+package GenericParadigm;
+import java.util.*;
+public class SuperGeneric {
+
+}

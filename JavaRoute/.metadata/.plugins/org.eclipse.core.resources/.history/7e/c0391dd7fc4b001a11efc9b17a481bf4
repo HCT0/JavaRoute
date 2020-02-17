@@ -1,0 +1,9 @@
+package SetFramework;
+import LOL.*;
+public class ContainerClass {
+	private static final String ArrayList = null;
+
+	public static void main(String[] args) {
+		ArrayList
+	}
+}

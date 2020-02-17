@@ -1,0 +1,9 @@
+package GenericParadigm;
+import java.util.*;
+import LOL.*;
+
+public class GenericMethodsCutDown {
+	public static void main(String[] args) {
+		
+	}
+}

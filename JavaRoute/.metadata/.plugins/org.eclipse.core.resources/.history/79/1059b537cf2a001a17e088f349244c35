@@ -1,0 +1,18 @@
+package j2ee;
+import java.util.Scanner;
+public class Bmi2 {
+		public static void main(String[] args) {
+			Scanner s = new Scanner(System.in);
+			//读取身高和体重
+			float height = s.nextFloat();
+			float weight = s.nextFloat();
+			float bmi = weight/(height*height);
+			if(bmi < 18.5)
+				System.out.println("体重过轻");
+			if(bmi >= 18.5 && bmi<24)
+				System.out.println("正常范围");
+			if(bmi》= 24 && bmi<27)
+				System.out.println("体重过胖");
+		}
+	}
+

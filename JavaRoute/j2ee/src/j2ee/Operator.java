@@ -1,0 +1,15 @@
+package j2ee;
+import java.util.Scanner;
+public class Operator {
+public static void main(String[] args) {
+	Scanner s = new Scanner(System.in);
+	int a = s.nextInt();//读取一个整数
+	int b = s.nextInt();
+	//将剩余的回车的字符串读取了
+	String rn = s.nextLine();
+	//读取一个字符串
+	String c = s.nextLine();
+	int d = a+b;
+	System.out.println(d);	
+}
+}

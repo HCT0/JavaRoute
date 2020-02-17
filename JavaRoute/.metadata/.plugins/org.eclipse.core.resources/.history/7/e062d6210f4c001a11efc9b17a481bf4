@@ -1,0 +1,9 @@
+package SetFramework;
+import java.util.*;
+import LOL.*;
+public class HashMap {
+	public static void main(String[] args) {
+		HashMap<String,Hero> hm = new HashMao();
+		
+	}
+}

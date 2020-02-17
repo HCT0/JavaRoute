@@ -1,0 +1,13 @@
+package SetFramework;
+import LOL.*;
+import java.util.*;
+public class ConllectionsMethods {
+	public static void main(String[] args) {
+		List l = new List();
+		for(int i =0;i<10;i++) {
+			l.add(i);
+		}
+		Conllection.reverse(l);
+		
+	}
+}

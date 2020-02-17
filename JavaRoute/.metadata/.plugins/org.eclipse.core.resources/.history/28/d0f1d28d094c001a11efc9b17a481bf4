@@ -1,0 +1,11 @@
+package SetFramework;
+import java.util.*;
+import LOL.*;
+
+public class LinkedList {
+	public static void main(String[] args) {
+		LinkedList<Hero> link = new LinkedList();
+		
+	}
+	
+}

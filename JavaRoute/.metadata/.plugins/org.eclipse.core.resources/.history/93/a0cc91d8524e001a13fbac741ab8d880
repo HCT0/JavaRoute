@@ -1,0 +1,21 @@
+package Thread;
+/*
+ * 线程之间的交互
+ * 1 while 等待式交互
+ * 缺点：占用cpu,影响性能
+ * 
+ * */
+import LOL.*;
+public class ThreadInteractive {
+	public static void main(String[] args) {
+
+        final Hero gareen = new Hero();
+        gareen.name = "盖伦";
+        gareen.hp = 616;
+        
+        Thread t1 = new Thread() {
+        	
+        }
+		
+	}
+}

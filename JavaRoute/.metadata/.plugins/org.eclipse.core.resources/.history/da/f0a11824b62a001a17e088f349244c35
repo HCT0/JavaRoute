@@ -1,0 +1,8 @@
+package j2ee;
+
+public class DataTypeTrans {
+public static void main(String[] args) {
+	
+}
+
+}

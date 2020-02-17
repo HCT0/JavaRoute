@@ -1,0 +1,8 @@
+package SetFramework;
+import java.util.*;
+import LOL.*;
+public class HashSet {
+	public static void main(String[] args) {
+		HashSet hs = new HashSet();
+	}
+}

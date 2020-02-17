@@ -1,0 +1,9 @@
+package GenericParadigm;
+
+public class NodeGenericChange<T> {
+	public NodeGenericChange<T> leftNode;
+	public NodeGenericChange<T> leftNode;
+	public NodeGenericChange<T> leftNode;
+	
+	
+}

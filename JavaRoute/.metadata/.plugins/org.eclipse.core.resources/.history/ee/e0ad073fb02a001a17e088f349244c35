@@ -1,0 +1,13 @@
+package j2ee;
+
+public class Item {
+
+	String name;
+	int price;
+
+public static void mian(String args[]) {
+	Item bloodbottem = new Item;
+	
+}
+}
+

@@ -1,0 +1,13 @@
+public class DOG {
+    public String name;
+    public DOG() {
+    }
+    public void setname(String  name){
+        this.name = name;
+    }
+      
+    public String  getname(){
+        return this.name;
+    }
+}
+

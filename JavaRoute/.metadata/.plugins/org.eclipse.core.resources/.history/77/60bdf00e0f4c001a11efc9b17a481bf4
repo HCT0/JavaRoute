@@ -1,0 +1,6 @@
+package SetFramework;
+import java.util.*;
+
+public class HashMap {
+
+}

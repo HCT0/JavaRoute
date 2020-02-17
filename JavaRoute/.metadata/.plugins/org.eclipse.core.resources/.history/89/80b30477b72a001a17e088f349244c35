@@ -1,0 +1,9 @@
+package j2ee;
+
+public class FinalTest {
+
+	public void method1() {
+		int i=5;
+		i=10;
+	}
+}

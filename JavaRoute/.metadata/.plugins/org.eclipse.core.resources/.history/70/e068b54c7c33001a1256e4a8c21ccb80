@@ -1,0 +1,10 @@
+package NumberAndString;
+
+public class UnboxingPractice {
+	public static void main(String[] args) {
+		byte b1 =100;
+		Byte b2 = b1;//×Ô¶¯×°Ïä
+		b1 = b2;
+	}
+
+}

@@ -1,0 +1,29 @@
+package Thread;
+
+public class TaskConsumeThread {
+	class TaskConsumeThread() extends Thread{
+		public TaskConsumeThread(String name) {
+            super(name);
+        }
+		Runnable task;
+		public void run() {
+			 System.out.println("启动： " + this.getName());
+			 while(true) {
+				 synchronized(tasks) {
+					 while(tasks.isEmpty()) {
+						 try {
+							tasks.wait(); 
+						 }catch(InterruptException e) {
+							 e.printStackTrace();
+						 }
+					 }
+				 }
+				 tasks  = tasks.removeLast();
+				 tasks.notifyAll();
+			 }
+			 System.out.println(this.getName() + " 获取到任务，并执行");
+             task.run();
+		}
+	
+	}
+}

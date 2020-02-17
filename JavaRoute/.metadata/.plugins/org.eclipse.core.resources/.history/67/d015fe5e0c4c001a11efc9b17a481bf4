@@ -1,0 +1,12 @@
+package SetFramework;
+/*
+ * 按照顺序插入数据
+ * 
+ * 
+ * */
+public class Node {
+	public Node leftNode;
+	public Node RightNode;
+	public Object Value;
+	
+}

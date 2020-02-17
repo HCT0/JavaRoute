@@ -1,0 +1,21 @@
+package j2ee;
+
+public class Item {
+
+	String name;
+	int price;
+
+public static void mian(String args[]) {
+	Item boodBottem = new Item();
+	Item shose = new Item();
+	Item longKnife = new Item();
+	bloodBottem.name = "ÑªÆ¿";
+	bloodBottem.price = 50;
+	shose.name = "²ÝÐ¬";
+	shose.price = 300;
+	longKnife.name = "³¤½£";
+	longKnife.price  = 350;
+	
+}
+}
+

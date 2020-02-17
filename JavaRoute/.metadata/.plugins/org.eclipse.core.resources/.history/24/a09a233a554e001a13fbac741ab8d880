@@ -1,0 +1,10 @@
+package Thread;
+import LOL.*;
+
+public class ThreadInteractive2 {
+	public static void main(String[] args) {
+		 final Hero gareen = new Hero();
+	     gareen.name = "¸ÇÂ×";
+	     gareen.hp = 616;
+	}
+}

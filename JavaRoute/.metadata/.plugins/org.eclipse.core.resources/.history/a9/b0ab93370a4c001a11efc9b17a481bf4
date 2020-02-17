@@ -1,0 +1,21 @@
+package SetFramework;
+import java.util.*;
+import LOL.*;
+
+public class LinkedList {
+	public static void main(String[] args) {
+		LinkedList ll =new LinkedList();
+		//在后面加入数据
+		ll.addLast(new Hero("hero1"));
+	    ll.addLast(new Hero("hero2"));
+	    ll.addLast(new Hero("hero3"));
+	    
+	        System.out.println(ll);
+	}
+
+	private void addLast(Hero hero) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

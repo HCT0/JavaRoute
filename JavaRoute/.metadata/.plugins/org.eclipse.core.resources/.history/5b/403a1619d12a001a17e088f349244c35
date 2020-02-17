@@ -1,0 +1,16 @@
+package j2ee;
+import java.util.Scanner;
+public class Switch {
+	Scanner s = new Scanner(System.in);
+	int c = s.nextInt();
+	public static void main(String[] args) {
+		
+	}
+	switch(c) {
+		case 1:
+			System.out.println("´ºÌì");
+			break;
+		default:
+			System.out.prinln("Êä³öÊı×Ö´íÎó");
+	}
+}

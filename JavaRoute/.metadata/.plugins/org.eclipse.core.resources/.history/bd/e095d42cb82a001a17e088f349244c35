@@ -1,0 +1,6 @@
+package j2ee;
+import java.util.Scanner;
+public class Operator {
+	Scanner s = new Scanner(System.in);
+
+}

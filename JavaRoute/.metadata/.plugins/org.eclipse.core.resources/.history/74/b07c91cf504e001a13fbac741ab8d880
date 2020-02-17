@@ -1,0 +1,10 @@
+package Thread;
+import LOL.*;
+public class Deathlock {
+	public static void main(String[] args) {
+		 final Hero ahri = new Hero();
+	        ahri.name = "¾ÅÎ²Ñýºü";
+	        final Hero annie = new Hero();
+	        annie.name = "°²ÄÝ";
+	}
+}

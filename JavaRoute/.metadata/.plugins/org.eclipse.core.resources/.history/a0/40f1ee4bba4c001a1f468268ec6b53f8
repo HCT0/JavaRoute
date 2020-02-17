@@ -1,0 +1,22 @@
+package GenericParadigm;
+import java.util.*;
+import LOL.*;
+
+public class GenericMethodsCutDown {
+	public static void Iterator(ArrayList<? extends Hero > heros){
+		for(Hero h1 :heros){
+			System.out.println(h1.name);
+		}
+	}	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		 ArrayList<Hero> hs = new ArrayList<>();
+	        ArrayList<APHero> aphs = new ArrayList<>();
+	        ArrayList<ADHero> adhs = new ArrayList<>();
+	         
+	}
+}

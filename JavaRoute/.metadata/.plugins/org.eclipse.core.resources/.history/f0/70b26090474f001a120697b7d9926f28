@@ -1,0 +1,5 @@
+package Jdbc;
+import LOL.*;
+public interface DAO {
+	
+}

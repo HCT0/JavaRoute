@@ -1,0 +1,12 @@
+public class @class@ {
+    public @type@ @property@;
+    public @class@() {
+    }
+    public void set@property@(@type@  @property@){
+        this.@property@ = @property@;
+    }
+      
+    public @type@  get@property@(){
+        return this.@property@;
+    }
+}

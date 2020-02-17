@@ -1,0 +1,7 @@
+package File;
+
+public class FileEncodePractice {
+	public static void main(String[] args) {
+	byte  b1 = 0xE5;
+	}
+}

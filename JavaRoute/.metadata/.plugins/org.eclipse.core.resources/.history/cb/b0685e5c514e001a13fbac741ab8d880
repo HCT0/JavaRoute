@@ -1,0 +1,23 @@
+package Thread;
+import LOL.*;
+public class Deathlock {
+	public static void main(String[] args) {
+		 final Hero ahri = new Hero();
+	     ahri.name = "九尾妖狐";
+	     final Hero annie = new Hero();
+	     annie.name = "安妮";
+	     Thread t1 = new Thread() {
+	    	public void run() {
+	    		synchronized(ahri) {
+	    			System.out.println("t1 已经占有 了九尾妖狐 ");
+	    			try {
+	    				Thread.sleep(1000);
+	    			}catch(InterruptedException e) {
+	    				e.printStackTrace();
+	    			}
+	    		}
+	    	}
+	     };
+	
+	}
+}

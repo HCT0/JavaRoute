@@ -1,0 +1,49 @@
+package j2ee;
+
+public class Hero {
+	String name;//英雄的名字
+	int moveSpeed;//移动速度
+	float hp;//英雄的血量
+	float armor;//英雄的护甲
+	int dietNumber;//英雄四万的次数
+	int killedNunber;//杀人数
+	int  helpKilled;//助攻
+	int money;//金钱
+	int lasyHit;//补刀数
+	float attackSpeed;//攻击速度
+	String afterKill;//杀人以后说的话
+	String afterKilled;//被杀后说的话
+	//获取护甲值
+	float getArmor() {
+		return armor;
+	}
+	//坑队友
+	void keng() {
+		System.out.println("坑队友");
+	}
+	void addSpeed(int speed) 
+	{
+		moveSpeed = moveSpeed + speed;
+	}
+	
+	void legendary() {
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		Hero timo = new Hero();
+		timo.armor = 14f;  
+		timo.hp = 383f;
+		timo.moveSpeed = 330;
+		timo.name = "提莫";
+		
+		Hero gailun = new Hero();
+		gailun.armor = 27.536f;
+		gailun.name = "盖伦";
+		gailun.hp = 616.28f;
+		gailun.moveSpeed = 350;
+		gailun.addSpeed(100);
+		
+	}
+} 

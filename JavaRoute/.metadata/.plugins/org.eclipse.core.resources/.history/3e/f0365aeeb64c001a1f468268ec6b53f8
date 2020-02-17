@@ -1,0 +1,14 @@
+package GenericParadigm;
+import LOL.*;
+import java.util.*;
+
+public class extendsGeneric {
+	public static void main(String[] args) {
+		ArrayList <Aphero> apheros = new ArrayList();
+		apheros.add(new Aphero());
+		
+		//Hero 的子类泛型
+		ArrayList<? extends Hero> hero = aphero；
+		
+	}
+}

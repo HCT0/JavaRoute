@@ -1,0 +1,9 @@
+package NumberAndString;
+
+public class EncapsulationClass {
+public static void main(String[] args) {
+	int i =10;
+	Integer it = new Integer(i);//将 基本类型封装成封装类
+	
+}
+}

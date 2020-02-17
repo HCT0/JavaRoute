@@ -1,0 +1,14 @@
+package MultiThreadChatRealize;
+
+import java.net.*;
+
+public class Server {
+	public static void main(String[] args) {
+		try {
+			ServerSocket ss = new ServerSocket(8888);
+			Socket s = ss.accept();
+			new SendThread(s).start();
+			new RecieveThread(s).start();
+		}
+	}
+}

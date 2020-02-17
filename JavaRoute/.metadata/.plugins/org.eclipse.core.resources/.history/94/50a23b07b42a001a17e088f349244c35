@@ -1,0 +1,7 @@
+package j2ee;
+
+public class DataType {
+	public static void main(String[] args) {
+		double a = 3.14;
+	}
+}

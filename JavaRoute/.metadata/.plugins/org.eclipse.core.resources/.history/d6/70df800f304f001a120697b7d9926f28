@@ -1,0 +1,11 @@
+package MultiThreadChatRealize;
+import java.io.*;
+import java.net.*;
+public class SendThread {
+	public SendThread(Socket s) {
+		
+	}	
+	public static void main(String[] args) {
+		
+	}
+}

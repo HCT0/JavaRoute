@@ -1,0 +1,10 @@
+package Thread;
+/*
+ * 线程之间的交互
+ * 1 while 等待式交互
+ * 缺点：占用cpu,影响性能
+ * 
+ * */
+public class ThreadInteractive {
+
+}

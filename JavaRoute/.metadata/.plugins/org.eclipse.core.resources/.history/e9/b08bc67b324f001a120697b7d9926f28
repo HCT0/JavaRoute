@@ -1,0 +1,18 @@
+package Jdbc;
+import java.sql.*;
+public class JdbcConnection {
+	public static void main(String[] args) {
+		//加载驱动程序
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("数据库驱动加载成功 ！");
+		}catch(ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		//建立连接
+		
+		
+		
+		
+	}
+}

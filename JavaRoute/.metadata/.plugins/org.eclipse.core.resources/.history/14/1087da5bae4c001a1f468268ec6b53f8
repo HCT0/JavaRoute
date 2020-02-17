@@ -1,0 +1,15 @@
+package GenericParadigm;
+import LOL.*;
+import java.util.*;
+public class GenericStack<T> {
+	public static void main(String[] args) {
+		
+		
+		// 泛型的T的使用,在声明的时候是什么类型，就是什么类型
+		GenericStack <Hero> myStack = new GenericStack<Hero>(); 
+		
+		GenericStack <Item> itemStack = new GenericStack<Item>();
+		
+		
+	}
+}

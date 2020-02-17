@@ -1,0 +1,31 @@
+package Jdbc;
+import java.sql.*;
+public class JdbcConnection {
+	public static void main(String[] args){
+		//加载驱动程序
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("数据库驱动加载成功 ！");
+		}catch(ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		//建立连接
+		try {
+			Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8","root", "root");
+			System.out.println("连接成功");
+			
+			Statement s = c.createStatement();
+			System.out.println("创建statement 成功");
+		
+			 String sql = "insert into hero values(null,"+"'提莫'"+","+313.0f+","+50+")";
+			
+			
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+}

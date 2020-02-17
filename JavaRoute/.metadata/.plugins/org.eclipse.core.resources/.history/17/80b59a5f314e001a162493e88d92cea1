@@ -1,0 +1,18 @@
+package Thread;
+
+import LOL.*;
+import java.lang.*;
+public class SynchronizedThread2 {
+	public static void main(String[] args) {
+
+        final Hero gareen = new Hero();
+        gareen.name = "¸ÇÂ×";
+        gareen.hp = 10000;
+    
+        int n = 10000;
+        
+        Thread [] addThreads = new Thread();
+        Thread [] reduceThreads = new Thread();
+        
+	}
+}

@@ -1,0 +1,14 @@
+package Jdbc;
+import java.sql.*;
+public class JdbcOptimization {
+	public static void main(String[] args) {
+		Connection c = null;
+		Statement s = null;
+		try(){
+			
+		}catch(SQLException e){
+			e.printStaceTrace();
+		}
+	
+	}
+}

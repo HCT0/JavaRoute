@@ -1,0 +1,10 @@
+package MultiThreadChatRealize;
+
+public class Server {
+	public static void main(String[] args) {
+		try {
+			ServerSocket s = new ServerSokcet(8888);
+			
+		}
+	}
+}

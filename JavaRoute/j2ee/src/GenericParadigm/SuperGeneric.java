@@ -1,0 +1,23 @@
+package GenericParadigm;
+import java.util.*;
+import LOL.*;
+public class SuperGeneric {
+	public static void main(String[] args) {
+		ArrayList<? super Hero > objects = new ArrayList();
+		objects.add(new Hero("gailun"));
+		
+		//可以将子类等插入进去，只是取出来的时候，不合适
+		objects.add(new Hero("timo"));
+		objects.add(new Aphero());//Hero 的子类
+		
+		//输出数据
+		System.out.println(objects.get(0));
+		
+		
+		//需要强制转化，以为不知道是hero 还是Object
+		//ArrayList<Object > object1 = (ArrayList<Object>) objects;
+		
+		
+		
+	}
+}

@@ -1,0 +1,11 @@
+package NetworkProgramming;
+import java.net.Socket;
+import java.net.ServerSocket;
+
+public class ServerTest1 {
+	public static void main(String[] args) {
+		ServerSocket ss = new ServerSocket("8888");
+		
+	}
+}
+

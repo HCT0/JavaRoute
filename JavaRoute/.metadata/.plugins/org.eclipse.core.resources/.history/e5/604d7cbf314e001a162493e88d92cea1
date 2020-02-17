@@ -1,0 +1,19 @@
+package Thread;
+
+import LOL.*;
+import java.lang.*;
+public class SynchronizedThread2 {
+	public static void main(String[] args) {
+
+        final Hero gareen = new Hero();
+        gareen.name = "盖伦";
+        gareen.hp = 10000;
+    
+        int n = 10000;
+        //创建两个线程数组,一个用来装 加血的线程,一个用来装扣血的线程
+        Thread [] addThreads = new Thread[n];
+        Thread [] reduceThreads = new Thread[n];
+        
+        
+	}
+}

@@ -1,0 +1,7 @@
+package NumberAndString;
+
+public class MathMethod {
+public static void main(String[] args) {
+	
+}
+}

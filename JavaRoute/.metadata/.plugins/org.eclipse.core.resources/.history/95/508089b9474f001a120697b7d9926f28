@@ -1,0 +1,7 @@
+package Jdbc;
+import LOL.*;
+public interface DAO {
+	public void add(Hero hero);
+	public void update(Hero hero);
+	public void delete(int id)''
+}

@@ -1,0 +1,28 @@
+package NetworkProgramming;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class ClientTest3 {
+	public static void main(String[] args) {
+		try {
+				Socket s = new Socket("127.0.0.1",8888);
+				System.out.println(s);
+				Scanner sc = new Scanner(System.in);
+				
+				//将在console读取的内容传给服务器
+				try(PrintStream ps  = new PrintStream(s.getOutputStream());
+				){
+						ps.print(sc.nextLine());
+				}catch(IOException e) {
+					e.printStackTrace();
+				}
+				s.close();
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

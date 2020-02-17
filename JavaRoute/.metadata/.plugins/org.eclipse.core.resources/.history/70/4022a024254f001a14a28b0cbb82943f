@@ -1,0 +1,12 @@
+package NetworkProgramming;
+import java.net.*;
+
+import java.net.InetAddress;
+
+public class SocketTest {
+	public static void main(String[] args) throws UnknownHostException   {
+		InetAddress host  = new InetAddress.getLocalHost();;
+		String ip = host.getHostAddress();
+		System.out.println(ip);
+	}
+}

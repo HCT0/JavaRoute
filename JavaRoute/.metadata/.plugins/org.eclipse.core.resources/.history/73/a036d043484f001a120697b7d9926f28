@@ -1,0 +1,43 @@
+package Jdbc;
+import java.util.*;
+import LOL.Hero;
+import java.sql.*;
+public class HeroDao implements DAO {
+
+	@Override
+	public void add(Hero hero) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Hero hero) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Hero get(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public java.util.List<Hero> List() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public java.util.List<Hero> list(int start, int count) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+		
+}

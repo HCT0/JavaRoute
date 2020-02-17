@@ -1,0 +1,18 @@
+package NumberAndString;
+
+public class UnboxingPractice {
+	public static void main(String[] args) {
+		byte b1 =100;
+		Byte b2 = b1;//自动装箱
+		b1 = b2;//自动装箱
+		
+		short s1 = 100;
+		Short s2 = s1;//自动装箱
+		s1 = s2;//自动拆箱
+		
+		float f1 = 100f;
+		Float f2 =f1;
+		float f3 = f2;
+	}
+
+}

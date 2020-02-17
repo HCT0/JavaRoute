@@ -1,0 +1,6 @@
+package GenericParadigm;
+import LOL.*;
+import java.util.*;
+public class extendsGeneric {
+
+}

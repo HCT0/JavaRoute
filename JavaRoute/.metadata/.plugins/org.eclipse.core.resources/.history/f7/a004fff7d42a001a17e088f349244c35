@@ -1,0 +1,14 @@
+package j2ee;
+
+public class Millionaire {
+public static void main(String[] args) {
+	float sum = 1.2f ;
+	for(int i=0;;i++) {
+		sum =sum*0.2;
+		
+		if(sum>=100)
+			break;
+		sum +=1.2;
+	}
+}
+}

@@ -1,0 +1,13 @@
+package Jdbc;
+import LOL.*;
+import java.sql.*;
+public class OrmTest {
+	public static Hero get(int id ){
+		Hero hero = null;
+		
+	}
+	public static void main(String[] args) {
+		Hero h1 = get(22);
+		System.out.print(h1.name);
+	}
+}

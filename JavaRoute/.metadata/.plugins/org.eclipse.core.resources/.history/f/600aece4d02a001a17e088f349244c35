@@ -1,0 +1,11 @@
+package j2ee;
+import java.util.Scanner;
+public class Switch {
+	Scanner s = new Scanner(System.in);
+	int c = s.nextInt();
+	
+	switch(c) {
+		case 1:
+			System.out.println("´ºÌì");
+	}
+}

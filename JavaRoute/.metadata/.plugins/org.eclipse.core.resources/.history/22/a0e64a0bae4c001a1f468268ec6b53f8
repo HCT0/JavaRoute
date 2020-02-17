@@ -1,0 +1,8 @@
+package GenericParadigm;
+import LOL¡£*;
+
+public class GenericStack<T> {
+	public static void main(String[] args) {
+		GenericStack <Hero> myStack = new GenericStack<Hero>(); 
+	}
+}

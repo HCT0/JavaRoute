@@ -1,0 +1,9 @@
+package SetFramework;
+//ArrayList 实现了接口List
+
+import java.util.*;
+import LOL.*;
+public class List {
+	ArrayList heros = new ArrayList();
+	
+}

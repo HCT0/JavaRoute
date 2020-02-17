@@ -1,0 +1,8 @@
+package j2ee;
+import java.util.Scanner;
+public class Operator {
+	Scanner s = new Scanner(System.in);
+	int a = s.nextInt();//读取一个整数
+	int b = s.nextInt();
+
+}

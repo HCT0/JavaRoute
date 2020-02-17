@@ -1,0 +1,7 @@
+package j2ee;
+
+public class Item {
+
+	String name;
+	int price;
+}

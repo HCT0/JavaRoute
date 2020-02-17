@@ -1,0 +1,16 @@
+package SetFramework;
+import java.util.*;
+import LOL.*;
+
+public class ArrayListGeneric {
+	public static void main(String[] args) {
+		//没有使用泛型的情况
+		
+		ArrayList heros = new ArrayList();
+		heros.add(new Hero("gailun"));
+		heros.add(new Item("LongKnife"));
+		//存在的问题:太多的数据,无法识别每一个对象的类型
+		
+		
+	}
+}

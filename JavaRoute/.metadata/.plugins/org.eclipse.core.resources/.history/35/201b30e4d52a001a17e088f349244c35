@@ -1,0 +1,19 @@
+package j2ee;
+
+public class Millionaire {
+public static void main(String[] args) {
+	double sum = 1.2 ;
+
+	loop;
+	for(int i=1;;i++) {
+		sum = sum * 1.2;
+		
+		if(sum>=100) {
+			i++;
+			System.out.print("超过100万是在"+i+"年");
+			break LOOP;
+		}
+		sum +=1.2;
+	}
+}
+}

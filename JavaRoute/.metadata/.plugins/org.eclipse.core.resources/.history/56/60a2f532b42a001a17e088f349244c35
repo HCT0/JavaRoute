@@ -1,0 +1,13 @@
+package j2ee;
+
+public class DataType {
+	public static void main(String[] args) {
+		double a = 3.14;
+		double b = 2.769343;
+		int c = 365;
+		byte d = 12;
+		char e = '³Ô';
+		boolean f = 'flase';
+		
+	}
+}

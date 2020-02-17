@@ -1,0 +1,6 @@
+package NetworkProgramming;
+import java.io.*;
+
+public class PingTest {
+	Process  p = Runtime.getRuntime().exec("ping"+"192.168.2.106");
+}

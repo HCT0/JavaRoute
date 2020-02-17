@@ -1,0 +1,9 @@
+package j2ee;
+
+public class Millionaire {
+public static void main(String[] args) {
+	for(int i=0;;i++) {
+	}
+	}
+}
+}

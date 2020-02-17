@@ -1,0 +1,12 @@
+package NetworkProgramming;
+import java.net.Socket;
+import java.io.*;
+public class ClientTest1 {
+	public static void main(String[] args) {
+		try {
+			
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

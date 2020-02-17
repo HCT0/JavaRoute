@@ -1,0 +1,6 @@
+package GenericParadigm;
+import java.util.*;
+import LOL.*;
+public class SuperGeneric {
+
+}

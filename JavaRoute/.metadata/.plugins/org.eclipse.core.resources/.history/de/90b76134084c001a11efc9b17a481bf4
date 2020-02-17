@@ -1,0 +1,24 @@
+package SetFramework;
+import java.util.*;
+import LOL.*;
+
+public class ArrayList3WaysLoop {
+	public static void main(String[] args) {
+		ArrayList<Hero> heros = new ArrayList();
+		for(int i=0;i<5;i++) {
+			heros.add(new Hero("gailin"+i));
+		}
+		//for
+		for(int n=0;n<heros.size();n++) {
+			System.out.println(heros.get(n));
+		}
+		
+		//µü´úÆ÷
+		Iterator it = heros.iterator();
+		while(it.hasNext()) {
+			System.out.println();
+		}
+		
+		
+	}
+}

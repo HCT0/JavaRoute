@@ -1,0 +1,14 @@
+package GenericParadigm;
+import java.util.*;
+
+/*
+ * 根据数字类的知识，设计一个集合，这个集合里即可以放整数，也可以放浮点数，但是不能放字符串
+ * 
+ * 
+ * 
+ * */
+public class GenericParadigm {
+	public static void main(String[] args) {
+			
+	}
+}

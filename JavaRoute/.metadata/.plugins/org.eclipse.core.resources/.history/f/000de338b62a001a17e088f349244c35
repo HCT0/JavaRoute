@@ -1,0 +1,10 @@
+package j2ee;
+
+public class DataTypeTrans {
+public static void main(String[] args) {
+	short a = 12;
+	short b = 14;
+	short c = a+b;
+}
+
+}

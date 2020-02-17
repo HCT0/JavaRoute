@@ -1,0 +1,7 @@
+package SetFramework;
+//ArrayList 实现了接口List
+
+import java.util.*;abstract
+public class List {
+	
+}

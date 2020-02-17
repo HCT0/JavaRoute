@@ -1,0 +1,23 @@
+package GenericParadigm;
+import LOL.*;
+import java.util.*;
+public class GenericStack<T> {
+	LinkedList<T> ll = new LinkedList<T>();
+	public void add(T t) {
+		ll.add(t);
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		
+		// 泛型的T的使用,在声明的时候是什么类型，就是什么类型
+		GenericStack <Hero> myStack = new GenericStack<Hero>(); 
+		
+		Hero h1 = new Hero("盖伦");
+		myStack.add(h1);
+		
+		GenericStack <Item> itemStack = new GenericStack<Item>();
+		Item i = new Item("dajian");		
+	}
+}

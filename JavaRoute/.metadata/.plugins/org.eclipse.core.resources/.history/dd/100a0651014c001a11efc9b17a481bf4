@@ -1,0 +1,5 @@
+package SetFramework;
+import java.util.*;abstract
+public class ArrayListPractice1 {
+
+}

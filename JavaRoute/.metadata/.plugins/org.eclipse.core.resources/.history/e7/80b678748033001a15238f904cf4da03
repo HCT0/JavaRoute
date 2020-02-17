@@ -1,0 +1,8 @@
+package NumberAndString;
+
+public class NumberAndStringPractice {
+	public static void main(String[] args) {
+		float f = 3.14f;
+		String str = 
+	}
+}

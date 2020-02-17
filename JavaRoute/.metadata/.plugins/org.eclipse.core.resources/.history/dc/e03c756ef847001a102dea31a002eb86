@@ -1,0 +1,14 @@
+package File;
+
+public class FileEncodePractice {
+	public static void main(String[] args) {
+	byte  b1 = (byte) 0xE5;
+	byte  b2 = (byte) 0xB1;
+	byte  b3 = (byte) 0x8c;
+	byte all[] = new byte[3];
+	all[0] = b1;
+			
+	String str = new String(all,"Utf-8");
+	System.out.println(str);
+	}
+}

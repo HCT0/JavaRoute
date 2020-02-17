@@ -1,0 +1,34 @@
+package SetFramework;
+import java.util.*;
+
+import LOL.Hero;
+public class Queue {
+	public static void main(String[] args) {
+		LinkedList ll = new LinkedList();
+		Queue q = new Queue();
+		
+		   
+        //加在队列的最后面
+        System.out.print("初始化队列：\t");
+        q.offer(new Hero("Hero1"));
+        q.offer(new Hero("Hero2"));
+        q.offer(new Hero("Hero3"));
+        q.offer(new Hero("Hero4"));
+        
+        //取出第一个Hero，FIFO 先进先出
+        Hero h = q.poll();
+        System.out.println(h);
+        System.out.print("取出第一个元素之后的队列:\t");
+        System.out.println(q);
+          
+        
+        
+        
+          
+	}
+
+	private void offer(Hero hero) {
+		// TODO Auto-generated method stub
+		
+	}
+}

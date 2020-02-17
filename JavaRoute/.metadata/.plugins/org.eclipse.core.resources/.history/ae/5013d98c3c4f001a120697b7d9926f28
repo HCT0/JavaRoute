@@ -1,0 +1,20 @@
+package Jdbc;
+import java.sql.*;
+public class JdbcOptimization {
+	public static void main(String[] args) {
+		Connection c = null;
+		Statement s = null;
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("数据库驱动加载成功 ！");
+		}catch(ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		try(){
+			
+		}catch(SQLException e){
+			e.printStaceTrace();
+		}
+	
+	}
+}

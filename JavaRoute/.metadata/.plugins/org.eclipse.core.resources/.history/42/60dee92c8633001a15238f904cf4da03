@@ -1,0 +1,11 @@
+package NumberAndString;
+
+public class FormatPrint {
+	public static void main(String[] args) {
+		int a = 100;
+		int b = 10;
+		int c =1;
+		System.out.printf("%d,%d,%d\n",a,b,c);
+		System.out.format("%d,%d,%d\r",a,b,c);
+	}
+}

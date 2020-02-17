@@ -1,0 +1,12 @@
+import java.util.LinkedList;
+import java.util.concurrent.*;
+public class ThreadPool {
+	public static void main(String[] args)  throws InterruptedException {
+		ThreadPoolExecutor threadPool = new ThreadPoolExecutor(10,15,60,TimeUnit.SECONDS,new LinkedBlockingQueue<Runnable>());
+		threadPool.execute(new Runnable() {
+			public void run() {
+				System.out.println("»ŒŒÒ≤‚ ‘");
+			}
+		});
+	}
+}

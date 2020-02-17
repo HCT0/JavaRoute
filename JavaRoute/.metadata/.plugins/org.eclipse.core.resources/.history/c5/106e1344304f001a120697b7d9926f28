@@ -1,0 +1,15 @@
+package MultiThreadChatRealize;
+import java.net.*;
+import java.io.*;
+public class RecieveThread {
+	private Socket s;
+	
+	public RecieveThread(Socket s) {
+		this.s = s;
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

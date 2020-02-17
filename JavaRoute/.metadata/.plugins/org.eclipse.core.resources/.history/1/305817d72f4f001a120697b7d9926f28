@@ -1,0 +1,6 @@
+package MultiThreadChatRealize;
+import java.io.*;
+import java.net.*;
+public class SendThread {
+	
+}

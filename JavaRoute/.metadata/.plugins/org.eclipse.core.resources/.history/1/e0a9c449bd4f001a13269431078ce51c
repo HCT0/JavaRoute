@@ -1,0 +1,23 @@
+package log4j;
+
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+
+public class Log4jTest {
+	//根据类的名称获取日志对象
+	static Logger log =  Logger.getLogger(Log4jTest.class);
+	public static void main(String[] args) {
+		//进行默认设置
+		BasicConfigurator.configure();
+		//设置log 输出的级别
+		log.setLevel(Level.DEBUG);
+		log.trace("跟踪信息");
+		log.debug("调试信息");
+		log.info("输出信息");
+		
+		//Thread。sleep(1000);
+		
+		
+	}
+}

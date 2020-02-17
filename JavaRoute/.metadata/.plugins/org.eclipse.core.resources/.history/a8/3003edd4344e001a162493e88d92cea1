@@ -1,0 +1,6 @@
+package Thread;
+import java.util.*;
+
+public class NoSynchronizedToSynchronized {
+	
+}

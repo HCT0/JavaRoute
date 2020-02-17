@@ -1,0 +1,6 @@
+package Jdbc;
+import java.util.*;
+import java.sql.*;
+public class HeroDao implements DAO {
+		
+}

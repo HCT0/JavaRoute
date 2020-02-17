@@ -1,0 +1,8 @@
+package SetFramework;
+
+public class Node {
+	public Node leftNode;
+	public Node RightNode;
+	public Object Value;
+	
+}

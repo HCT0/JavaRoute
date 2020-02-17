@@ -1,0 +1,5 @@
+package Jdbc;
+import java.sql.*;
+public class GetMetaData {
+
+}

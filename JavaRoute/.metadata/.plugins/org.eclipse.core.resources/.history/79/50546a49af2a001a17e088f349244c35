@@ -1,0 +1,7 @@
+package j2ee;
+
+public class Hero {
+	String name;//英雄的名字
+	int MoveSpeend;//移动速度
+	float hp;//英雄的血量
+}

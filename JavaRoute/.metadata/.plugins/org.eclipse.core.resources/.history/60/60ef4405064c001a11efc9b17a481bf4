@@ -1,0 +1,14 @@
+package SetFramework;
+import java.util.*;
+import LOL.*;
+
+public class ArrayListGeneric {
+	public static void main(String[] args) {
+		//没有使用泛型的情况
+		
+		ArrayList heros = new ArrayList();
+		heros.add(new Hero("gailun"));
+		heros.add(new Item("LongKnife"));
+		
+	}
+}

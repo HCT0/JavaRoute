@@ -1,0 +1,16 @@
+package MultiThreadChatRealize;
+import java.io.*;
+import java.net.*;
+public class SendThread extends Thread {
+	private Socket s;
+	
+	public SendThread(Socket s) {
+		this.s = s;
+	}	
+	public void run() {
+		try(){
+			
+		}
+	}
+
+}

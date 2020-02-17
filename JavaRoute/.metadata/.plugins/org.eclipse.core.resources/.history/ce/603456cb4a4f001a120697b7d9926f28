@@ -1,0 +1,10 @@
+package Jdbc;
+import java.sql.*;
+import java.util.*;
+public class DatabaseConnectionPool {
+	List<Connection> cs = new List<Connection>();
+		int size;
+		public DatabaseConnectionPool(int size) {
+			
+		}
+}

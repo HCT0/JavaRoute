@@ -1,0 +1,10 @@
+package NumberAndString;
+
+public class EncapsulationClass {
+public static void main(String[] args) {
+	int i =10;
+	Integer it = new Integer(i);//将 基本类型封装成封装类
+	int x = it.intValue();//将Integer 的对象转换为 基本类型int 
+	
+}
+}

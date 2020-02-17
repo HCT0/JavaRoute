@@ -1,0 +1,175 @@
+package LOL;
+
+public class Hero {
+	/*
+	 * private Hero();//饿汉式
+	 * private static Hero heroInstance;
+	 * public static Hero getHero(){
+	 *     heroInstance = new Hero();
+	 * 	   return heroInstance;
+	 * }
+	 * 
+	 * 
+	 * */
+	static String copyRight;//所有对象都共用的
+	public String name;//英雄的名字
+	public int moveSpeed;//移动速度
+	public float hp;//英雄的血量
+	float armor;//英雄的护甲
+	int dietNumber;//英雄四万的次数
+	int killedNunber;//杀人数
+	int  helpKilled;//助攻
+	int money;//金钱
+	int lasyHit;//补刀数
+	float attackSpeed;//攻击速度
+	String afterKill;//杀人以后说的话
+	String afterKilled;//被杀后说的话
+	public  int damage;
+	
+	
+	public boolean match() {
+		return this.hp>100 && this.damage<50;
+	}
+	public  static void  battleWin(){//战斗胜利
+		System.out.println("Battle Win");
+	}
+	
+	public void recover() {//回血的方法
+		hp++;		
+	}
+	public void hurt() {//扣血的方法
+		synchronized(this) {//使用this,表示的本对象
+			hp--;
+		}
+	}
+	/*
+	public void revive(Hero h1) {
+		h1 = new Hero("提莫",400);
+	}
+	 */
+	public void useItem(Item i ) {
+		System.out.println("Hero 使用了 Item");
+		i.effect();
+	}
+	public Hero(String name,float hp) {
+		this.name = name;
+		this.hp = hp;
+	}
+		//获取护甲值
+	float getArmor() {
+		return armor;
+	}
+	//两个参数的构造函数
+	//public Hero(String name,float hp) {
+	//	System.out.println("调用Hero的两个参数的构造函数");
+	//}
+	
+	public Hero(String name,float hp,float armor,int MoveSpeed) {
+		this(name,hp);
+		System.out.println("这个是四个参数的构造函数");
+	}
+	
+	public void showAddressInMemory() {
+		System.out.println("打印this看到的虚拟地址"+this);
+	}
+	//坑队友
+	void keng() {
+		System.out.println("坑队友");
+	}
+	void addSpeed(int speed) 
+	{
+		moveSpeed = moveSpeed + speed;
+	}
+	//超神
+	void legendary() {
+	}
+	//获取血量
+	float getHp() {
+		return hp;
+	}
+	//血的回复量
+	void recovery(float blood) {
+	}
+	public void finalize() {
+		System.out.println("调用finalize，对象被回收");
+	}
+	public Hero() {
+		System.out.println("调用Hero的无参构造函数");
+	}
+	public Hero (String name) {
+		System.out.println(name+"调用Hero的一个参数的构造函数");
+	}
+	
+	public void kill(Mortal m) {
+		m.die();//Hero 杀了某一个英以后，调用这个死亡的英雄的die方法
+	}
+	//this代表是我的意思，就是这个对象
+	//this.name 代表属性name 。heroName 是参数
+	/*public Hero(String heroName,float heroHp,float heroArmor,int heroMoveSpeed) {
+		this.name = heroName;
+		this.hp = heroHp;
+		this.armor = heroArmor;
+		this.moveSpeed = heroMoveSpeed;
+	}*/
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		/*
+		Adhero  aixi = new Adhero();
+		AdapHero missFortune = new AdapHero();
+		Aphero lax = new Aphero();
+		
+		Hero h = new Adhero();
+		h.battleWin();//转换为父类对象以后，丢失子类的方法
+		Hero timo = new Hero();
+		timo.kill(aixi);
+		timo.kill(lax);
+		timo.kill(missFortune);
+		timo.armor = 14f;  
+		timo.hp = 383f;
+		timo.moveSpeed = 330;
+		timo.name = "提莫";
+		
+		//测试四个参数的构造函数使用 this 调用两个参数的构造函数
+		Hero testHero = new Hero("测试",1000,1000,300);
+		
+		//参数的测试
+		timo.hp = timo.hp=400;
+		timo.revive(timo);
+		System.out.println("提莫复活以后的血量为:"+timo.hp);
+		
+		
+		Hero gailun = new Hero();
+		gailun.armor = 27.536f;
+		gailun.copyRight = "Blizzard Entertainment Enterprise";
+		gailun.name = "盖伦";
+		gailun.hp = 616.28f;
+		gailun.moveSpeed = 350;
+		gailun.addSpeed(100);
+		
+		System.out.println("timo 的版权是"+timo.copyRight);
+		Hero.battleWin();
+	*/
+	}
+	public void attackHero(Hero h) {
+		try {
+			Thread.sleep(1000);
+		}catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+		h.hp-= damage;
+		if(h.isDead()) {
+			System.out.println(h.name + "死亡");
+		}
+	}
+	public boolean isDead() {
+		return 0>hp?true:false;
+	}
+	
+} 
